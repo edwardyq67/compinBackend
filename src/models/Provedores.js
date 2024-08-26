@@ -1,20 +1,32 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection');
 
-const ClienteListarCliente = sequelize.define('clienteListarCliente', {
-
+const Provedores = sequelize.define('provedores', {
     Usuario: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    E_Mail: {
+    F_atencion: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    Skype: {
+    Empresa: {
         type: DataTypes.STRING,
         allowNull: false
-    },Cumpleaños: {
+    },
+    Rubro: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Prioridad: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Cargo: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Entel: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -22,11 +34,11 @@ const ClienteListarCliente = sequelize.define('clienteListarCliente', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    Celular: {
+    Ruc: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    Entel: {
+    Celular: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -38,6 +50,26 @@ const ClienteListarCliente = sequelize.define('clienteListarCliente', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    Correo: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Web: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Entel: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Direccion_Empresa: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Deferencia: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     Pais: {
         type: DataTypes.STRING,
         allowNull: false
@@ -46,59 +78,7 @@ const ClienteListarCliente = sequelize.define('clienteListarCliente', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    Provincia: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
     Distrito: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    C_postal: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Dirección: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Referencia: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    RUC: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Obs_Direccion_Empresa: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Razon_Comercial: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Razon_Social: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Obs_direccion: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Cargo: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Aniversario: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    F_aviso: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Rubro: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -106,34 +86,6 @@ const ClienteListarCliente = sequelize.define('clienteListarCliente', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    Tipos_Cliente: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Status_atencion: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Origen: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    Web: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    C_presentacion: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
-    },
-    Catalogo: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
-    },
-    P_presentacion: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
-    },
 });
 
-module.exports = ClienteListarCliente;
+module.exports = Provedores;
